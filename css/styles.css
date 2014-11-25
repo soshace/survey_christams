@@ -1,0 +1,548 @@
+@import url(../fonts/open_sans/stylesheet.css);
+@import url(../fonts/open_sans_bold/stylesheet.css);
+@import url(../fonts/open_sans_light/stylesheet.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: open_sansregular;
+    font-size: 14px;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: open_sansbold;
+    line-height: 48px;
+}
+
+a {
+    text-decoration: none;
+    color: #139cd9;
+    font-family: open_sansbold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.header {
+    background: #139cd9;
+    padding-top: 11px;
+    height: 61px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header h2 {
+    font-family: open_sansbold;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.header p {
+    font-family: open_sansbold;
+    font-size: 11px;
+    color: #72c4e9;
+    line-height: 16px;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: -72px auto -168px;
+}
+
+.wrapper .content {
+    padding: 72px 0 168px;
+}
+
+.start-page {
+    width: 732px;
+    margin: 0 auto;
+    padding-top: 59px;
+    height: 340px;
+}
+
+.start-page__present {
+    float: left;
+    width: 253px;
+    padding-top: 19px;
+}
+
+.start-page__description {
+    width: 479px;
+    float: left;
+}
+
+.start-page__description h1 {
+    height: 68px;
+}
+
+.start-page__description p {
+    padding-bottom: 24px;
+    line-height: 24px;
+}
+
+.start-page .green-button {
+    padding-top: 6px;
+    text-transform: uppercase;
+    margin-top: 17px;
+    width: 186px;
+    margin-left: -2px;
+    height: 41px;
+    line-height: 18px;
+}
+
+.start-page .green-button span {
+    font-family: open_sansregular;
+    font-size: 12px;
+    text-transform: none;
+    color: #fff;
+    line-height: 16px;
+}
+
+.question-page {
+    height: 560px;
+}
+
+.question-page__step {
+    padding-top: 48px;
+    width: 80px;
+    margin: 0 auto;
+    color: #dadada;
+    font-size: 36px;
+    line-height: 30px;
+    font-family: open_sanslight;
+}
+
+.question-page__step span {
+    float: left;
+}
+
+.question-page__step__number {
+    padding-top: 12px;
+}
+
+.question-page__step__number.step-number {
+    margin-right: 8px;
+}
+
+.question-page__step__number.steps-amount {
+    margin-left: 4px;
+}
+
+.sprite.question-page__slash {
+    width: 21px;
+    height: 54px;
+    display: block;
+    background-position: -247px 0;
+}
+
+.question-page h1 {
+    padding-top: 4px;
+    text-align: center;
+}
+
+.question-page__buttons {
+    margin: 0 auto;
+    padding-top: 37px;
+}
+
+.question-page__buttons .green-button {
+    width: auto;
+    margin-left: 18px;
+    padding: 13px 21px 0 21px;
+    height: 35px;
+    line-height: 20px;
+    float: left;
+}
+
+.question-page__buttons .green-button:first-child {
+    margin-left: 0;
+}
+
+.question-page__previous {
+    padding-top: 17px;
+    text-align: center;
+    margin-left: 1px;
+}
+
+.question-page__previous .grey-button {
+    margin: 0 auto;
+}
+
+.question-page-1 .question-page__buttons {
+    width: 378px;
+    padding-left: 12px;
+}
+
+.question-page-2 .question-page__buttons {
+    width: 741px;
+    padding-left: 3px;
+}
+
+.question-page-3 .question-page__buttons {
+    width: 618px;
+    padding-left: 9px;
+}
+
+.question-page-4 .question-page__buttons {
+    width: 218px;
+}
+
+.question-page-4 .question-page__previous {
+    padding-top: 21px;
+}
+
+.loading-screen {
+    height: 561px;
+    text-align: center;
+}
+
+.loading-screen h1 {
+    padding-top: 58px;
+}
+
+.loading-screen p {
+    padding-top: 21px;
+    line-height: 24px;
+}
+
+.loading-screen img {
+    margin-top: 20px;
+}
+
+.final-page .title-description {
+    text-align: center;
+}
+
+.final-page .rewards-list {
+    color: #cbcbcb;
+}
+
+.final-page .rewards-list-item {
+    display: block;
+}
+
+.final-page .rewards-list h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: open_sansbold;
+    color: #000;
+}
+
+.final-page .rewards-list__code span {
+    color: #000;
+}
+
+.final-page .rewards-list__price span {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.final-page .rewards-list__copyright {
+    color: #27bf67;
+    line-height: 17px;
+    display: block;
+}
+
+.final-page .rewards-list__price.price-regular span {
+    margin-left: 4px;
+    color: #d2d2d2;
+}
+
+.final-page .rewards-list__price.price-your span {
+    color: #f43030;
+    margin-left: 6px;
+}
+
+.final-page .rewards-list__price.price-shipping span {
+    color: #4a4a4a;
+    margin-left: 6px;
+}
+
+.final-page-v1 {
+    width: 730px;
+    margin: 0 auto;
+}
+
+.final-page-v1 h1 {
+    text-align: center;
+    padding-top: 58px;
+}
+
+.final-page-v1 .title-description {
+    padding-top: 23px;
+}
+
+.final-page-v1 .rewards-list {
+    margin-left: -1px;
+    padding-top: 44px;
+}
+
+.final-page-v1 .rewards-list-item {
+    padding-bottom: 48px;
+}
+
+.final-page-v1 .rewards-list-item__picture {
+    float: left;
+}
+
+.final-page-v1 .rewards-list-item__description {
+    float: left;
+    padding-left: 24px;
+}
+
+.final-page-v1 .rewards-list h3 {
+    height: 33px;
+    line-height: 30px;
+    margin-top: -2px;
+}
+
+.final-page-v1 .rewards-list__code {
+    height: 43px;
+}
+
+.final-page-v1 .rewards-list__prices {
+    height: 56px;
+}
+
+.final-page-v1 .rewards-list__prices li {
+    display: inline;
+}
+
+.final-page-v1 .rewards-list__copyright {
+    padding-top: 10px;
+}
+
+.final-page-v1 .rewards-list__price.price-your {
+    margin-left: 16px;
+}
+
+.final-page-v1 .rewards-list__price.price-shipping {
+    margin-left: 15px;
+}
+
+.final-page-v2 {
+    width: 734px;
+    margin: 0 auto;
+}
+
+.final-page-v2 h1 {
+    text-align: center;
+    padding-top: 58px;
+}
+
+.final-page-v2 .title-description {
+    padding-top: 23px;
+}
+
+.final-page-v2 .rewards-list {
+    padding: 44px 0 43px 0;
+}
+
+.final-page-v2 .rewards-list-item {
+    padding-left: 25px;
+    float: left;
+    width: 228px;
+}
+
+.final-page-v2 .rewards-list-item:first-child {
+    padding-left: 0;
+}
+
+.final-page-v2 .rewards-list-item__picture {
+}
+
+.final-page-v2 .rewards-list-item__description {
+    text-align: center;
+}
+
+.final-page-v2 .rewards-list h3 {
+    height: 28px;
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+.final-page-v2 .rewards-list__code {
+    height: 45px;
+}
+
+.final-page-v2 .rewards-list__prices {
+}
+
+.final-page-v2 .rewards-list__prices li {
+}
+
+.final-page-v2 .rewards-list__copyright {
+    padding-top: 29px;
+}
+
+.final-page-v2 .rewards-list__price.price-regular {
+    height: 46px;
+}
+
+.final-page-v2 .rewards-list__price.price-your {
+    height: 47px;
+}
+
+.final-page-v2 .rewards-list__price.price-shipping {
+    height: 45px;
+}
+
+.final-page-v2 .rewards-list__price.price-regular span {
+    margin-left: 4px;
+}
+
+.final-page-v2 .rewards-list-item .green-button {
+    margin-left: 3px;
+}
+
+.green-button {
+    padding-top: 11px;
+    width: 218px;
+    height: 46px;
+    border: #1bad58 1px solid;
+    background: #2fca70; /* Old browsers */
+    background: -moz-linear-gradient(top, #2fca70 1%, #1bad58 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #2fca70), color-stop(100%, #1bad58)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2fca70 1%, #1bad58 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2fca70 1%, #1bad58 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2fca70 1%, #1bad58 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #2fca70 1%, #1bad58 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2fca70', endColorstr='#1bad58', GradientType=0); /* IE6-9 */
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: open_sansbold;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 20px;
+    text-shadow: 0px 1px 1px rgba(18, 151, 74, 1);
+    cursor: pointer;
+    display: block;
+}
+
+.green-button:hover {
+    text-decoration: none;
+}
+
+.green-button span {
+    display: block;
+    color: #60d390;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.grey-button {
+    border: #d0d0d0 1px solid;
+    background: #ededed; /* Old browsers */
+    background: -moz-linear-gradient(top, #ededed 1%, #dadada 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #ededed), color-stop(100%, #dadada)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ededed 1%, #dadada 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ededed 1%, #dadada 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ededed 1%, #dadada 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ededed 1%, #dadada 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dadada', GradientType=0); /* IE6-9 */
+    color: #ffffff;
+    font-family: open_sansbold;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: 0px 1px 1px rgba(177, 180, 178, 1);
+    text-align: center;
+    cursor: pointer;
+    height: 20px;
+    padding: 8px 9px 0 9px;
+    font-size: 11px;
+    line-height: 12px;
+    display: block;
+    width: 102px;
+}
+
+.grey-button:hover {
+    text-decoration: none;
+}
+
+.footer {
+    line-height: 14px;
+    font-size: 10px;
+    color: #c5c5c5;
+    text-align: center;
+    height: 168px;
+}
+
+.footer .player {
+    margin: 0 auto;
+    padding-top: 33px;
+    height: 49px;
+}
+
+.footer__copyright {
+    height: 86px;
+}
+
+.player {
+}
+
+.player__content {
+    width: 227px;
+    margin: 0 auto;
+}
+
+.player__update {
+    padding-top: 4px;
+    color: #eb5c5c;
+}
+
+.sprite {
+    background: url('../images/sprite.png');
+}
+
+.player__play, .player__pause {
+    width: 29px;
+    height: 29px;
+    float: left;
+}
+
+.sprite.player__pause {
+    background-position: -29px 0;
+}
+
+.sprite.player__bar {
+    margin-top: 9px;
+    width: 189px;
+    height: 10px;
+    background-position: -58px -16px;
+    float: right;
+}
+
+.sprite.player__bar__filler {
+    float: left;
+    height: 100%;
+    background-position: -58px -6px;
+}
