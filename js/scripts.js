@@ -1,3 +1,5 @@
+'use strict';
+
 $(function () {
     var currentStep = 0,
         originalTitle = document.title,
