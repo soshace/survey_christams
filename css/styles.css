@@ -121,18 +121,35 @@ a:hover {
     word-spacing: -1px;
 }
 
+.questions-sprite {
+    background: url("/images/questions_sprite.png") no-repeat;
+}
+
 .question-page {
-    height: 560px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #fff;
+    width: 777px;
+    height: 378px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .question-page__step {
-    padding-top: 48px;
-    width: 80px;
+    width: 115px;
+    height: 114px;
     margin: 0 auto;
-    color: #dadada;
-    font-size: 36px;
-    line-height: 30px;
-    font-family: open_sanslight;
+    color: #fff;
+    font-size: 30px;
+    line-height: 24px;
+    font-family: droid_sansbold;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .question-page__step span {
@@ -151,44 +168,15 @@ a:hover {
     margin-left: 4px;
 }
 
-.sprite.question-page__slash {
-    width: 21px;
-    height: 54px;
-    display: block;
-    background-position: -247px 0;
-}
-
 .question-page h1 {
     padding-top: 4px;
     text-align: center;
-}
-
-.question-page__buttons {
-    margin: 0 auto;
-    padding-top: 37px;
-}
-
-.question-page__buttons .green-button {
-    width: auto;
-    margin-left: 18px;
-    padding: 13px 21px 0 21px;
-    height: 35px;
-    line-height: 20px;
-    float: left;
-}
-
-.question-page__buttons .green-button:first-child {
-    margin-left: 0;
 }
 
 .question-page__previous {
     padding-top: 17px;
     text-align: center;
     margin-left: 1px;
-}
-
-.question-page__previous .grey-button {
-    margin: 0 auto;
 }
 
 .question-page-1 .question-page__buttons {
@@ -420,8 +408,8 @@ a:hover {
     color: #eb5c5c;
 }
 
-.sprite {
-    background: url('../images/sprite.png');
+.player-sprite {
+    background: url('../images/player_sprite.png');
 }
 
 .player__play, .player__pause {
@@ -430,15 +418,15 @@ a:hover {
     float: left;
 }
 
-.sprite.player__pause {
+.player-sprite.player__pause {
     background-position: 0 -1px;
 }
 
-.sprite.player__play {
+.player-sprite.player__play {
     background-position: -40px -2px;
 }
 
-.sprite.player__bar {
+.player-sprite.player__bar {
     margin-top: 24px;
     width: 181px;
     height: 10px;
@@ -446,7 +434,7 @@ a:hover {
     float: right;
 }
 
-.sprite.player__bar__filler {
+.player-sprite.player__bar__filler {
     float: left;
     height: 100%;
     background-position: -78px -2px;

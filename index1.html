@@ -21,39 +21,48 @@
 </div>
 <div class="wrapper">
     <div class="content">
-        <div class="modal">
-            <div class="modal__content">
-                <div class="start-page js-start-page clearfix">
-                    <div class="start-page__present">
-                        <img src="/images/santa.png" width="273" height="372" alt="Santa"/>
-                    </div>
-                    <div class="start-page__description">
-                        <h1>Dear Lloyds Bank visitor,</h1>
+        <!--<div class="modal">-->
+        <!--<div class="modal__content">-->
+        <!--<div class="start-page js-start-page clearfix">-->
+        <!--<div class="start-page__present">-->
+        <!--<img src="/images/santa.png" width="273" height="372" alt="Santa"/>-->
+        <!--</div>-->
+        <!--<div class="start-page__description">-->
+        <!--<h1>Dear Lloyds Bank visitor,</h1>-->
 
-                        <p>You've been randomly selected to take part in our 2014<br/> XMASS user survey for visitors in the <span class="js-city"></span> area.</p>
+        <!--<p>You've been randomly selected to take part in our 2014<br/> XMASS user survey for visitors in the <span class="js-city"></span> area.</p>-->
 
-                        <p>Tell us what you think of Lloyds Bank in this 30 second<br/> survey, and, to say "thank you" we have
-                            reserved a few<br/> rewards worth over &pound;50 for completing our short survey!</p>
-                        <a href="#" class="green-button js-next">
-                            <span class="green-button__content">Let&#8217;s do it!</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--<p>Tell us what you think of Lloyds Bank in this 30 second<br/> survey, and, to say "thank you" we have-->
+        <!--reserved a few<br/> rewards worth over &pound;50 for completing our short survey!</p>-->
+        <!--<a href="/index2.html" class="green-button">-->
+        <!--<span class="green-button__content">Let&#8217;s do it!</span>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 
         <div class="question-page question-page-1 js-question-page-1">
-            <div class="question-page__step clearfix">
+            <div class="question-page__step questions-sprite clearfix">
                 <span class="question-page__step__number step-number">1</span>
-                <span class="sprite question-page__slash"></span>
                 <span class="question-page__step__number steps-amount">4</span>
             </div>
+            <h4>Choose the answer you like from the list below</h4>
+
             <h1>Where are you viewing<br/> Lloyds Bank from?</h1>
 
             <div class="question-page__buttons clearfix">
-                <a href="#" class="green-button js-next">At home</a>
-                <a href="#" class="green-button js-next">At work</a>
-                <a href="#" class="green-button js-next">Other</a>
+                <a href="#" class="js-choose">At home</a>
+                <a href="#" class="js-choose">At work</a>
+                <a href="#" class="js-choose">Other</a>
+            </div>
+            <div class="question-page__previous">
+                <a href="#" class="grey-button js-previous">Previous Question</a>
+                <a href="#" class="green-button js-next">
+                    <span class="green-button__content">
+                        Previous Question
+                    </span>
+                </a>
             </div>
         </div>
     </div>
@@ -66,14 +75,15 @@
         review our privacy policy and terms. We are not<br/> affiliated nor partnered with any third-party. See
         important terms and conditions.
     </p>
+
     <div class="player">
         <div class="clearfix player__content">
             <div class="js-player"></div>
-            <a href="#" class="js-play sprite player__play"></a>
-            <a href="#" class="js-pause sprite player__pause"></a>
+            <a href="#" class="js-play player-sprite player__play"></a>
+            <a href="#" class="js-pause player-sprite player__pause"></a>
 
-            <div class="sprite player__bar">
-                <div class="js-play-bar sprite player__bar__filler"></div>
+            <div class="player-sprite player__bar">
+                <div class="js-play-bar player-sprite player__bar__filler"></div>
             </div>
         </div>
         <div class="js-no-solution player__update" style="display: none;">
