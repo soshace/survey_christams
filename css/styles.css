@@ -1,3 +1,5 @@
+@import url(vendors/jquery.ui.button.css);
+@import url(vendors/jquery.ui.theme.css);
 @import url(../fonts/open_sans/stylesheet.css);
 @import url(../fonts/open_sans_bold/stylesheet.css);
 @import url(../fonts/open_sans_light/stylesheet.css);
@@ -43,6 +45,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.bold {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .hide {
@@ -281,7 +289,6 @@ a:hover {
     width: 773px;
     height: 378px;
     margin: 0 auto;
-    position: relative;
 }
 
 .loading-page__content {
@@ -331,8 +338,38 @@ a:hover {
     top: -14px;
 }
 
-.final-page .title-description {
+.final-page {
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #fff;
+    width: 773px;
+    margin: 0 auto;
+}
+
+.final-page__header {
+    background: url("/images/final-page-header.png") 27px 30px no-repeat;
+}
+
+.final-page__header h1 {
+    color: #48b500;
+    font-size: 24px;
+    font-family: droid_serifbold;
     text-align: center;
+    padding-top: 46px;
+    line-height: 36px;
+}
+
+.final-page__header p {
+    font-family: open_sansregular;
+    font-size: 14px;
+    color: #a8a8a8;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 24px;
 }
 
 .final-page .rewards-list {
@@ -341,13 +378,15 @@ a:hover {
 
 .final-page .rewards-list-item {
     display: block;
+    padding-bottom: 20px;
 }
 
 .final-page .rewards-list h3 {
-    font-size: 24px;
-    line-height: 24px;
     font-family: open_sansbold;
     color: #000;
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
 }
 
 .final-page .rewards-list__code span {
@@ -355,90 +394,60 @@ a:hover {
 }
 
 .final-page .rewards-list__price span {
-    font-size: 18px;
-    line-height: 24px;
+    line-height: 18px;
 }
 
 .final-page .rewards-list__copyright {
-    color: #27bf67;
-    line-height: 17px;
+    color: #183d9b;
     display: block;
+    line-height: 17px;
 }
 
 .final-page .rewards-list__price.price-regular span {
     margin-left: 4px;
-    color: #d2d2d2;
+    color: #000;
+    font-size: 12px;
 }
 
 .final-page .rewards-list__price.price-your span {
-    color: #f43030;
+    color: #b80403;
     margin-left: 6px;
+    font-size: 12px;
 }
 
 .final-page .rewards-list__price.price-shipping span {
     color: #4a4a4a;
     margin-left: 6px;
+    font-size: 12px;
 }
 
-.final-page {
-    width: 730px;
-    margin: 0 auto;
+.final-page .rewards-list {
+    padding: 15px 0 0 15px;
 }
 
-.final-pageh1 {
-    text-align: center;
-    padding-top: 58px;
-}
-
-.final-page.title-description {
-    padding-top: 23px;
-}
-
-.final-page.rewards-list {
-    margin-left: -1px;
-    padding-top: 44px;
-}
-
-.final-page.rewards-list-item {
-    padding-bottom: 48px;
-}
-
-.final-page.rewards-list-item__picture {
+.final-page .rewards-list-item__picture {
     float: left;
+    height: 110px;
+    padding-right: 20px;
+    width: 150px;
 }
 
-.final-page.rewards-list-item__description {
-    float: left;
-    padding-left: 24px;
+.final-page .rewards-list__code {
+    height: 18px;
 }
 
-.final-page.rewards-list h3 {
-    height: 33px;
-    line-height: 30px;
-    margin-top: -2px;
-}
-
-.final-page.rewards-list__code {
-    height: 43px;
-}
-
-.final-page.rewards-list__prices {
+.final-page .rewards-list__prices {
     height: 56px;
+    color: #000;
 }
 
-.final-page.rewards-list__prices li {
-    display: inline;
+.final-page .rewards-list__prices li {
+    display: block;
+    font-size: 12px;
+    margin: 0 !important;
 }
 
-.final-page.rewards-list__copyright {
-    padding-top: 10px;
-}
-
-.final-page.rewards-list__price.price-your {
-    margin-left: 16px;
-}
-
-.final-page.rewards-list__price.price-shipping {
+.final-page .rewards-list__price.price-shipping {
     margin-left: 15px;
 }
 
@@ -593,4 +602,10 @@ a:hover {
 
 .modal__shown {
     overflow: hidden;
+}
+
+.rewards-list-item.clearfix > p {
+    float: right;
+    margin-right: 28px;
+    margin-top: -20px;
 }
