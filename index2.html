@@ -10,227 +10,50 @@
     <script src="/js/vendors/jplayer/jquery.jplayer.min.js"></script>
     <script src="/js/scripts.js"></script>
 </head>
-<body>
-<!--<div style="background: url('/stuff/1.jpg'); width: 1200px;height: 806px;position: absolute;z-index: 1;opacity: 0.3;left: 50%;margin-left: -600px;"></div>-->
+<body class="modal__shown">
+<div style="background: url('/stuff/1.jpg'); width: 1200px;height: 806px;position: absolute;z-index: 1000000000000;opacity: 0.3;left: 50%;margin-left: -600px;display: none"></div>
+<div style="background: url('/stuff/2.jpg'); width: 1200px;height: 806px;position: absolute;z-index: 1000000000000;opacity: 0.3;left: 50%;margin-left: -600px;display: none"></div>
 <div class="header">
     <div class="header__content">
+        <p>2014 User Survey:</p>
 
+        <h2>Lloyds BANK</h2>
     </div>
-    <p>2014 User Survey:</p>
-
-    <h2>Lloyds BANK</h2>
 </div>
 <div class="wrapper">
     <div class="content">
-        <div class="start-page js-start-page clearfix">
-            <div class="start-page__present">
-                <img src="/images/present.jpg" width="229" height="193"/>
-            </div>
-            <div class="start-page__description">
-                <h1>Dear Lloyds Bank visitor,</h1>
-
-                <p>You've been randomly selected to take part in our 2014<br/> XMASS user survey for visitors in the <span class="js-city"></span> area.</p>
-
-                <p>Tell us what you think of Lloyds Bank in this 30 second<br/> survey, and, to say "thank you" we have
-                    reserved a few<br/> rewards worth over &pound;50<br/> for completing our short survey!</p>
-                <a href="#" class="green-button js-next">Let&#8217;s do it!<span>I don&#8217;t want to refuse gift!</span></a>
-            </div>
-        </div>
-
-        <div class="question-page question-page-1 js-question-page-1 hide">
-            <div class="question-page__step clearfix">
+        <div class="question-page">
+            <div class="question-page__step questions-sprite clearfix">
                 <span class="question-page__step__number step-number">1</span>
-                <span class="sprite question-page__slash"></span>
-                <span class="question-page__step__number steps-amount">4</span>
+                <span class="question-page__step__number steps-amount">/4</span>
             </div>
-            <h1>Where are you viewing<br/> Lloyds Bank from?</h1>
+            <h4>Choose the answer you like from the list below</h4>
 
-            <div class="question-page__buttons clearfix">
-                <a href="#" class="green-button js-next">At home</a>
-                <a href="#" class="green-button js-next">At work</a>
-                <a href="#" class="green-button js-next">Other</a>
+            <h1>Where are you viewing Lloyds Bank from?</h1>
+
+            <div class="question-page__variants clearfix">
+                <a href="#" class="js-choose question-page__variants__item">At home</a>
+                <span class="question-page__variants__selected question-page__variants__item">
+                    <span class="questions-sprite questions-sprite__snowflake"></span>
+                    At work
+                </span>
+                <a href="#" class="js-choose question-page__variants__item">Other</a>
             </div>
-        </div>
-
-        <div class="question-page question-page-2 js-question-page-2 hide">
-            <div class="question-page__step clearfix">
-                <span class="question-page__step__number step-number">2</span>
-                <span class="sprite question-page__slash"></span>
-                <span class="question-page__step__number steps-amount">4</span>
+            <div class="question-page__navigation clearfix">
+                <a href="#" class="question-page__navigation__previous js-previous">
+                    <span class="questions-sprite questions-sprite__previous"></span>
+                    Previous question
+                </a>
+                <a href="#" class="green-button js-next">
+                    <span class="green-button__content">
+                        Next question
+                    </span>
+                </a>
             </div>
-            <h1>How often do you visit<br/> Lloyds Bank?</h1>
-
-            <div class="question-page__buttons clearfix">
-                <a href="#" class="green-button js-next">Once a week or more</a>
-                <a href="#" class="green-button js-next">Less than once a week</a>
-                <a href="#" class="green-button js-next" style="width: 177px;">This is my first visit</a>
-            </div>
-            <div class="question-page__previous">
-                <a href="#" class="grey-button js-previous">Next Question</a>
-            </div>
-        </div>
-
-        <div class="question-page question-page-3 js-question-page-3 hide">
-            <div class="question-page__step clearfix">
-                <span class="question-page__step__number step-number">3</span>
-                <span class="sprite question-page__slash"></span>
-                <span class="question-page__step__number steps-amount">4</span>
-            </div>
-            <h1>How many hours do you spend<br/> online each day?</h1>
-
-            <div class="question-page__buttons clearfix">
-                <a href="#" class="green-button js-next">Less than 4 hours</a>
-                <a href="#" class="green-button js-next">5 - 10 Hours</a>
-                <a href="#" class="green-button js-next">More than 10 hours</a>
-            </div>
-            <div class="question-page__previous">
-                <a href="#" class="grey-button js-previous">Previous Question</a>
-            </div>
-        </div>
-
-        <div class="question-page question-page-4 js-question-page-4 hide">
-            <div class="question-page__step clearfix">
-                <span class="question-page__step__number step-number">4</span>
-                <span class="sprite question-page__slash"></span>
-                <span class="question-page__step__number steps-amount">4</span>
-            </div>
-            <h1>What is your gender?</h1>
-
-            <div class="question-page__buttons clearfix">
-                <a href="#" class="green-button js-next">Male</a>
-                <a href="#" class="green-button js-next">Female</a>
-            </div>
-            <div class="question-page__previous">
-                <a href="#" class="grey-button js-previous">Previous Question</a>
-            </div>
-        </div>
-
-        <div class="loading-screen js-loading-screen hide">
-            <h1>That's it, all done! Thank you<br/> for your participation.</h1>
-
-            <p>As we submit the answers to your questions, we are checking our in-stock inventory to<br/> see which
-                rewards are
-                available as a way of saying thank you for answering our survey<br/> questions.</p>
-
-            <img src="/images/loader.gif" width="61" height="61"/>
-        </div>
-
-        <div class="final-page final-page js-final-page hide">
-            <h1>We have the following rewards<br/> for your participation.</h1>
-
-            <p class="title-description">Please choose one reward from the below list for participating in our
-                survey.</p>
-            <ul class="rewards-list">
-                <li class="rewards-list-item clearfix">
-                    <img class="rewards-list-item__picture" src="/images/img1.jpg" width="228" height="216">
-
-                    <div class="rewards-list-item__description">
-                        <span class="rewards-list__copyright">Stemologica &copy;</span>
-
-                        <h3>Advanced Skincare Kit</h3>
-
-                        <p class="rewards-list__code">
-                            Promo code
-                            <span>"Beautysystem"</span>
-                        </p>
-
-                        <ul class="rewards-list__prices">
-                            <li class="rewards-list__price price-regular">
-                                Regular Price: <span>&pound;119.95</span>
-                            </li>
-                            <li class="rewards-list__price price-your">
-                                Your Price: <span>&pound;0.00</span>
-                            </li>
-                            <li class="rewards-list__price price-shipping">
-                                Shipping: <span>&pound;3.95</span>
-                            </li>
-                        </ul>
-                        <a target="_blank" href="http://ed53r.trackvoluum.com/click/1" class="green-button">
-                            Choose this reward!
-                            <span>(3 units remaining)</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="rewards-list-item clearfix">
-                    <img class="rewards-list-item__picture" src="/images/img2.jpg" width="228" height="216">
-
-                    <div class="rewards-list-item__description">
-                        <span class="rewards-list__copyright">E-Cigs Bran &copy;</span>
-
-                        <h3>Electronic Cigarettes</h3>
-
-                        <p class="rewards-list__code">
-                            Promo code
-                            <span>"Vapor"</span>
-                        </p>
-
-                        <ul class="rewards-list__prices">
-                            <li class="rewards-list__price price-regular">
-                                Regular Price: <span>&pound;139.99</span>
-                            </li>
-                            <li class="rewards-list__price price-your">
-                                Your Price: <span>&pound;0.00</span>
-                            </li>
-                            <li class="rewards-list__price price-shipping">
-                                Shipping: <span>&pound;4.95</span>
-                            </li>
-                        </ul>
-                        <a target="_blank" href="http://ed53r.trackvoluum.com/click/2" class="green-button">
-                            Choose this reward!
-                            <span>(2 units remaining)</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="rewards-list-item clearfix">
-                    <img class="rewards-list-item__picture" src="/images/img3.jpg" width="228" height="216">
-
-                    <div class="rewards-list-item__description">
-                        <span class="rewards-list__copyright">Super Ketone plus &copy;</span>
-
-                        <h3>Weight Loss Kit</h3>
-
-                        <p class="rewards-list__code">
-                            Promo code
-                            <span>"Lloyds Bank"</span>
-                        </p>
-
-                        <ul class="rewards-list__prices">
-                            <li class="rewards-list__price price-regular">
-                                Regular Price: <span>&pound;87.75</span>
-                            </li>
-                            <li class="rewards-list__price price-your">
-                                Your Price: <span>&pound;0.00</span>
-                            </li>
-                            <li class="rewards-list__price price-shipping">
-                                Shipping: <span>&pound;4.95</span>
-                            </li>
-                        </ul>
-                        <a target="_blank" href="http://ed53r.trackvoluum.com/click/3" class="green-button">
-                            Choose this reward!
-                            <span>(2 units remaining)</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
         </div>
     </div>
 </div>
 <div class="footer">
-    <div class="player">
-        <div class="clearfix player__content">
-            <div class="js-player"></div>
-            <a href="#" class="js-play sprite player__play"></a>
-            <a href="#" class="js-pause sprite player__pause"></a>
-
-            <div class="sprite player__bar">
-                <div class="js-play-bar sprite player__bar__filler"></div>
-            </div>
-        </div>
-        <div class="js-no-solution player__update" style="display: none;">
-            To play the media you will need to either update your browser to a recent version or update your <a
-                href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-        </div>
-    </div>
     <p class="footer__copyright">
         Copyright 2008-2014 All rights reserved.<br/>
         Questions or comments about this survey? E-mail us at: <a href="mailto:queries@annualsurvey.info">queries@annualsurvey.info</a><br/>
@@ -238,6 +61,22 @@
         review our privacy policy and terms. We are not<br/> affiliated nor partnered with any third-party. See
         important terms and conditions.
     </p>
+
+    <div class="player">
+        <div class="clearfix player__content">
+            <div class="js-player"></div>
+            <a href="#" class="js-play player-sprite player__play"></a>
+            <a href="#" class="js-pause player-sprite player__pause"></a>
+
+            <div class="player-sprite player__bar">
+                <div class="js-play-bar player-sprite player__bar__filler"></div>
+            </div>
+        </div>
+        <div class="js-no-solution player__update" style="display: none;">
+            To play the media you will need to either update your browser to a recent version or update your <a
+                href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+    </div>
 </div>
 </body>
 </html>

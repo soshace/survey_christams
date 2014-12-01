@@ -49,6 +49,14 @@ a:hover {
     display: none;
 }
 
+.opacity_05 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
 .clearfix {
     overflow: hidden;
 }
@@ -103,8 +111,8 @@ a:hover {
 }
 
 .start-page__description {
-    width: 363px;
-    padding-right: 53px;
+    width: 371px;
+    padding-right: 45px;
     float: left;
     padding-top: 52px;
 }
@@ -472,7 +480,7 @@ a:hover {
 }
 
 .player-sprite.player__pause {
-    background-position: 0 -1px;
+    background-position: -1px -1px;
 }
 
 .player-sprite.player__play {
@@ -498,9 +506,15 @@ a:hover {
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
+}
+
+.modal__bg {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .modal__content {
