@@ -12,6 +12,7 @@
 </head>
 <body class="modal__shown">
 <div style="background: url('/stuff/1.jpg'); width: 1200px;height: 806px;position: absolute;z-index: 1000000000000;opacity: 0.3;left: 50%;margin-left: -600px;display: none"></div>
+<div style="background: url('/stuff/2.jpg'); width: 1200px;height: 806px;position: absolute;z-index: 1000000000000;opacity: 0.3;left: 50%;margin-left: -600px;display: none"></div>
 <div class="header">
     <div class="header__content">
         <p>2014 User Survey:</p>
@@ -42,25 +43,31 @@
         <!--</div>-->
         <!--</div>-->
 
-        <div class="question-page question-page-1 js-question-page-1">
+        <div class="question-page">
             <div class="question-page__step questions-sprite clearfix">
                 <span class="question-page__step__number step-number">1</span>
-                <span class="question-page__step__number steps-amount">4</span>
+                <span class="question-page__step__number steps-amount">/4</span>
             </div>
             <h4>Choose the answer you like from the list below</h4>
 
-            <h1>Where are you viewing<br/> Lloyds Bank from?</h1>
+            <h1>Where are you viewing Lloyds Bank from?</h1>
 
-            <div class="question-page__buttons clearfix">
-                <a href="#" class="js-choose">At home</a>
-                <a href="#" class="js-choose">At work</a>
-                <a href="#" class="js-choose">Other</a>
+            <div class="question-page__variants clearfix">
+                <a href="#" class="js-choose question-page__variants__item">At home</a>
+                <span class="question-page__variants__selected question-page__variants__item">
+                    <span class="questions-sprite questions-sprite__snowflake"></span>
+                    At work
+                </span>
+                <a href="#" class="js-choose question-page__variants__item">Other</a>
             </div>
-            <div class="question-page__previous">
-                <a href="#" class="grey-button js-previous">Previous Question</a>
+            <div class="question-page__navigation clearfix">
+                <a href="#" class="question-page__navigation__previous js-previous">
+                    <span class="questions-sprite questions-sprite__previous"></span>
+                    Previous question
+                </a>
                 <a href="#" class="green-button js-next">
                     <span class="green-button__content">
-                        Previous Question
+                        Next question
                     </span>
                 </a>
             </div>
