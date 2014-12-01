@@ -442,11 +442,13 @@ a:hover {
 }
 
 .green-button.disabled {
+    filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
     background: #e9e9e9;
     cursor: default;
 }
 
 .green-button.disabled .green-button__content {
+    filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
     background: #e9e9e9;
     text-shadow: 0 1px 1px rgba(212, 211, 211, 1);
 }
@@ -542,8 +544,8 @@ a:hover {
     background: #fff;
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin: -300px 0 0 -388px;
+    top: 0;
+    margin-left: -388px;
 }
 
 .modal__shown {

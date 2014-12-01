@@ -54,6 +54,32 @@ $(function () {
     }
 
     /**
+     * Function positions modal window (.js-modal)
+     *
+     * @function
+     * @name modalPositioning
+     * @returns {undefined}
+     */
+    function modalPositioning() {
+        var $this = $(this),
+            $modalWindow = $('.js-modal'),
+            modalWindowHeight,
+            windowHeight;
+
+        if ($modalWindow.length) {
+            modalWindowHeight = $modalWindow.height();
+            windowHeight = $this.height();
+
+            if (windowHeight > modalWindowHeight) {
+                $modalWindow.css('top', windowHeight / 2 - modalWindowHeight / 2);
+                return;
+            }
+
+            $modalWindow.css('top', 0);
+        }
+    }
+
+    /**
      * Function dynamically changes title of document
      *
      * @function
@@ -88,22 +114,20 @@ $(function () {
     });
 
     $('.js-next').on('click', function (event) {
-        var $this = $(this);
-
-        event.preventDefault();
+        var $this = $(this),
+            $currentStep = steps[currentStep];
 
         if ($this.hasClass('disabled')) {
             return;
         }
 
-        steps[currentStep].addClass('hide');
+        $currentStep.addClass('hide');
         currentStep++;
+
         if (currentStep !== steps.length) {
             steps[currentStep].removeClass('hide');
-            return;
+            event.preventDefault();
         }
-
-        showLoaderScreen(3000);
     });
 
     $('.js-previous').on('click', function (event) {
@@ -143,4 +167,7 @@ $(function () {
 
         $('.js-next', $this).removeClass('disabled');
     });
+
+    $(window).on('resize', modalPositioning);
+    modalPositioning.call(window);
 });
