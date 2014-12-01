@@ -25,12 +25,24 @@ $(function () {
      * @param {number} loadTime
      * @returns {undefined}
      */
-    function showLoaderScreen(loadTime) {
-        $loaderScreen.removeClass('hide');
-        setTimeout(function () {
-            $loaderScreen.addClass('hide');
-            $finalPage.removeClass('hide');
-        }, loadTime);
+    function startLoader(loadTime) {
+        var $loader = $('.js-loader'),
+            fillerWidth = 0,
+            intervalIndex,
+            interval = 10,
+            loaderIncrease = 100 / (loadTime / interval);
+
+        if ($loader.length) {
+            intervalIndex = setInterval(function () {
+                fillerWidth += loaderIncrease;
+                $loader.css('width', fillerWidth + '%');
+
+                if (fillerWidth >= 100) {
+                    clearInterval(intervalIndex);
+                    location.href = '/index4.html';
+                }
+            }, interval);
+        }
     }
 
     /**
@@ -170,4 +182,5 @@ $(function () {
 
     $(window).on('resize', modalPositioning);
     modalPositioning.call(window);
+    startLoader(3000);
 });
