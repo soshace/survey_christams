@@ -98,11 +98,11 @@ a:hover {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: -72px auto -168px;
+    margin: -72px auto -168px 0;
 }
 
 .wrapper .content {
-    padding: 72px 0 168px;
+    padding: 72px 0 200px 0;
 }
 
 .start-page {
