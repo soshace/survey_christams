@@ -24,7 +24,7 @@ body {
     font-family: open_sansregular;
     font-size: 14px;
     color: #000;
-    background: url("/images/bg_pattern.jpg");
+    background: url("../images/bg_pattern.jpg");
 }
 
 h1, h2, h3, h4, h5 {
@@ -138,7 +138,7 @@ a:hover {
 }
 
 .questions-sprite {
-    background: url("/images/questions_sprite.png") no-repeat;
+    background: url("../images/questions_sprite.png") no-repeat;
 }
 
 .questions-sprite__snowflake {
@@ -313,7 +313,7 @@ a:hover {
 }
 
 .loader-sprite {
-    background: url("/images/loader_sprite.png") no-repeat;
+    background: url("../images/loader_sprite.png") no-repeat;
 }
 
 .loading-page__loader {
@@ -351,7 +351,7 @@ a:hover {
 }
 
 .final-page__header {
-    background: url("/images/final-page-header.png") 27px 30px no-repeat;
+    background: url("../images/final-page-header.png") 27px 30px no-repeat;
 }
 
 .final-page__header h1 {
