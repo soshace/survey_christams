@@ -292,7 +292,7 @@ a:hover {
 }
 
 .loading-page__content {
-    width: 430px;
+    width: 440px;
     margin: 0 auto;
 }
 
@@ -339,19 +339,15 @@ a:hover {
 }
 
 .final-page {
+    background: #fff url("../images/final-page-header.jpg") no-repeat;
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-bottomright: 10px;
     -moz-border-radius-bottomleft: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: #fff;
     width: 773px;
     margin: 0 auto;
-}
-
-.final-page__header {
-    background: url("../images/final-page-header.png") 27px 30px no-repeat;
 }
 
 .final-page__header h1 {
@@ -359,26 +355,21 @@ a:hover {
     font-size: 24px;
     font-family: droid_serifbold;
     text-align: center;
-    padding-top: 46px;
+    padding-top: 11px;
     line-height: 36px;
 }
 
 .final-page__header p {
     font-family: open_sansregular;
     font-size: 14px;
-    color: #a8a8a8;
     text-align: center;
     padding-top: 10px;
     line-height: 24px;
 }
 
-.final-page .rewards-list {
-    color: #cbcbcb;
-}
-
 .final-page .rewards-list-item {
     display: block;
-    padding-bottom: 20px;
+    padding: 0 0 20px 92px;
 }
 
 .final-page .rewards-list h3 {
@@ -413,6 +404,7 @@ a:hover {
     color: #b80403;
     margin-left: 6px;
     font-size: 12px;
+    font-weight: bold;
 }
 
 .final-page .rewards-list__price.price-shipping span {
@@ -608,4 +600,12 @@ a:hover {
     float: right;
     margin-right: 28px;
     margin-top: -20px;
+}
+
+.yellow-highlighted {
+    background: #ffff00;
+}
+
+.color-red {
+    color: #f70300;
 }
