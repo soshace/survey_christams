@@ -39,7 +39,7 @@ $(function () {
 
                 if (fillerWidth >= 100) {
                     clearInterval(intervalIndex);
-                    location.href = '/us/4/index4.html';
+                    location.href = 'index4.html';
                 }
             }, interval);
         }
@@ -111,10 +111,10 @@ $(function () {
     $('.js-player').jPlayer({
         ready: function () {
             $(this).jPlayer('setMedia', {
-                mp3: '/us/4/audio/uk.mp3'
+                mp3: 'audio/uk.mp3'
             }).jPlayer('play');
         },
-        swfPath: '/us/4/js/vendors/jplayer',
+        swfPath: 'js/vendors/jplayer',
         supplied: 'mp3',
         cssSelectorAncestor: '',
         cssSelector: {
