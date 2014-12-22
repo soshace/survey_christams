@@ -1,11 +1,14 @@
 'use strict';
 
 $(function () {
-    var selectedItemTemplate = '<span class="question-page__variants__selected question-page__variants__item js-selected">' +
-            '<span class="questions-sprite questions-sprite__snowflake"></span>' +
+    var selectedItemTemplate = '<span class="question-page__variants__item js-selected">' +
+            '<span class="sprite sprite-option-enabled"></span>' +
             '<span class="js-selected-text"></span>' +
             '</span>',
-        questionItem = '<a href="#" class="js-choose question-page__variants__item"></a>',
+        questionItem = '<a href="#" class="js-choose question-page__variants__item">' +
+            '<span class="sprite sprite-option"></span>' +
+            '<span class="js-text"></span>' +
+            '</a>',
         currentStep = 0,
         originalTitle = document.title,
         $loaderScreen = $('.js-loading-screen'),
@@ -126,12 +129,7 @@ $(function () {
     });
 
     $('.js-next').on('click', function (event) {
-        var $this = $(this),
-            $currentStep = steps[currentStep];
-
-        if ($this.hasClass('disabled')) {
-            return;
-        }
+        var $currentStep = steps[currentStep];
 
         $currentStep.addClass('hide');
         currentStep++;
@@ -160,11 +158,13 @@ $(function () {
             currentText = $this.text(),
             $newSelectedElement = $(selectedItemTemplate),
             $selected = $this.siblings('.js-selected'),
-            selectedText;
+            selectedText,
+            $questionItem = $(questionItem);
 
         if ($selected.length) {
             selectedText = $('.js-selected-text', $selected).text();
-            $selected.replaceWith($(questionItem).text(selectedText));
+            $('.js-text', $questionItem).text(selectedText);
+            $selected.replaceWith($questionItem);
         }
 
         $this.parents('.js-question-page').trigger('chosen');
