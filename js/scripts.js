@@ -14,42 +14,12 @@ $(function () {
             '</a>',
         currentStep = 0,
         originalTitle = document.title,
-        $loaderScreen = $('.js-loading-screen'),
-        $finalPage = $('.js-final-page'),
         steps = [
             $('.js-question-page-1'),
             $('.js-question-page-2'),
             $('.js-question-page-3'),
             $('.js-question-page-4')
         ];
-
-    /**
-     * Function shows loader page and start timer
-     *
-     * @function
-     * @name showLoaderScreen
-     * @param {number} loadTime
-     * @returns {undefined}
-     */
-    function startLoader(loadTime) {
-        var $loader = $('.js-loader'),
-            fillerWidth = 0,
-            intervalIndex,
-            interval = 10,
-            loaderIncrease = 100 / (loadTime / interval);
-
-        if ($loader.length) {
-            intervalIndex = setInterval(function () {
-                fillerWidth += loaderIncrease;
-                $loader.css('width', fillerWidth + '%');
-
-                if (fillerWidth >= 100) {
-                    clearInterval(intervalIndex);
-                    location.href = 'index4.html';
-                }
-            }, interval);
-        }
-    }
 
     /**
      * Function sets date at element
@@ -201,6 +171,12 @@ $(function () {
 
     $(window).on('resize', modalPositioning);
     modalPositioning.call(window);
-    startLoader(3000);
+
+    if (window.loaderFinishLink) {
+        setTimeout(function () {
+            location.href = window.loaderFinishLink;
+        }, 3000);
+    }
+
     setDate($('.js-today-date'));
 });
