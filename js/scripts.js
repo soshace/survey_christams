@@ -182,5 +182,5 @@ $(function () {
 
     $(window).on('resize', modalPositioning);
     modalPositioning.call(window);
-    startLoader(3000);
+    //startLoader(3000);
 });

@@ -11,52 +11,44 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-<div class="header">
-    <div class="header__content">
-        <p>2014 User Survey:</p>
-
-        <h2>Lloyds BANK</h2>
-    </div>
-</div>
+<div style="background: url(images/stuff/Apply-answers-screen.jpg); width: 1400px; height: 900px;position: absolute;top: 0;left: 50%;margin-left: -704px;z-index:20;opacity: 0.5;display: none"></div>
 <div class="wrapper">
     <div class="content">
-        <div class="loading-page">
-            <div class="loading-page__content">
-                <h1>
-                    That's it, all done!<br/>
-                    Thank you for your participation.
-                </h1>
+        <div class="header clearfix">
+            <a href="/" class="header__logo">
+                <img src="images/logo.png" width="151" height="38" alt="Logo">
+            </a>
 
-                <p>
-                    As we submit the answers to your questions, we are checking<br/>
-                    our in-stock inventory to see which rewards are available as a<br/>
-                    way of saying thank you for answering our survey questions.
-                </p>
-
-                <div class="loader-sprite loading-page__loader">
-                    <div class="loader-sprite loading-page__loader__filler js-loader">
-                        <div class="loader-sprite loading-page__loader__filler__sledge"></div>
-                    </div>
-                </div>
+            <div class="header__visitor">
+                <div>Visitor’s Survey:</div>
+                <h2>Google.com</h2>
             </div>
+            <time>Monday, November 10, 2014</time>
+        </div>
+        <div class="loading-page">
+            <h1>
+                That's it, all done! Thank you for your participation!
+            </h1>
+
+            <p>
+                We are checking our in-stock inventory to see which rewards are available<br/>
+                as a way of saying "Thank You" for answering our survey questions. Please wait...
+            </p>
+
+            <figure class="loader-sprite loading-page__loader">
+                <img src="images/loader.gif" width="74" height="74" alt="Loader image"/>
+                <figcaption>Checking inventory</figcaption>
+            </figure>
         </div>
 
     </div>
 </div>
 <div class="footer">
-    <p class="footer__copyright">
-        Copyright 2008-2014 All rights reserved.<br/>
-        Questions or comments about this survey? E-mail us at: <a href="mailto:queries@annualsurvey.info">queries@annualsurvey.info</a><br/>
-        Your privacy is important to us. We do not collect your personal information in this questionnaire. Please
-        review our privacy policy and terms. We are not<br/> affiliated nor partnered with any third-party. See
-        important terms and conditions.
-    </p>
-
     <div class="player">
         <div class="clearfix player__content">
             <div class="js-player"></div>
-            <a href="#" class="js-play player-sprite player__play"></a>
-            <a href="#" class="js-pause player-sprite player__pause"></a>
+            <a href="#" class="js-play sprite player__play"></a>
+            <a href="#" class="js-pause sprite player__pause"></a>
 
             <div class="player-sprite player__bar">
                 <div class="js-play-bar player-sprite player__bar__filler"></div>
@@ -67,6 +59,13 @@
                 href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
         </div>
     </div>
+    <p class="footer__copyright">
+        Copyright 2008-2014 All rights reserved.<br/>
+        Questions or comments about this survey? E-mail us at: <a href="mailto:queries@annualsurvey.info">queries@annualsurvey.info</a><br/>
+        Your privacy is important to us. We do not collect your personal information in this questionnaire. Please
+        review our privacy policy and terms. We are not<br/> affiliated nor partnered with any third-party. See
+        important terms and conditions.
+    </p>
 </div>
 </body>
 </html>

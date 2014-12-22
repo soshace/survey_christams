@@ -237,40 +237,28 @@ body {
 }
 
 .loading-page {
-    background: #fff;
-    height: 378px;
-}
-
-.loading-page__content {
-    width: 440px;
-    margin: 0 auto;
+    text-align: center;
+    border: 7px solid #ebebeb;
+    height: 396px;
 }
 
 .loading-page h1 {
-    color: #48b500;
     font-size: 24px;
-    font-family: droid_serifbold;
-    text-align: center;
-    padding-top: 47px;
-    line-height: 35px;
+    padding-top: 40px;
 }
 
 .loading-page p {
-    color: #a8a8a8;
-    padding-top: 10px;
-    padding-left: 24px;
-    line-height: 24px;
-}
-
-.loader-sprite {
-    background: url("../images/loader_sprite.png") no-repeat;
+    padding-top: 22px;
+    line-height: 20px;
 }
 
 .loading-page__loader {
-    width: 395px;
-    height: 10px;
-    background-position: -59px -10px;
-    margin: 54px 0 0 18px;
+    padding-top: 50px;
+}
+
+.loading-page__loader figcaption {
+    padding-top: 17px;
+    font-weight: bold;
 }
 
 .loading-page__loader__filler {
