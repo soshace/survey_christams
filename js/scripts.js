@@ -202,5 +202,5 @@ $(function () {
     $(window).on('resize', modalPositioning);
     modalPositioning.call(window);
     startLoader(3000);
-    setDate($('.js-date'));
+    setDate($('.js-today-date'));
 });
