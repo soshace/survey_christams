@@ -1,7 +1,10 @@
 'use strict';
 
 $(function () {
-    var selectedItemTemplate = '<span class="question-page__variants__item js-selected">' +
+    var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
+        monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"),
+        now = new Date(),
+        selectedItemTemplate = '<span class="question-page__variants__item js-selected">' +
             '<span class="sprite sprite-option-enabled"></span>' +
             '<span class="js-selected-text"></span>' +
             '</span>',
@@ -45,6 +48,22 @@ $(function () {
                     location.href = 'index4.html';
                 }
             }, interval);
+        }
+    }
+
+    /**
+     * Function sets date at element
+     *
+     * @function
+     * @name setDate
+     * @param $element
+     * @returns {undefined}
+     */
+    function setDate($element) {
+        var date = dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();
+
+        if ($element.length) {
+            $element.html(date);
         }
     }
 
@@ -182,5 +201,6 @@ $(function () {
 
     $(window).on('resize', modalPositioning);
     modalPositioning.call(window);
-    //startLoader(3000);
+    startLoader(3000);
+    setDate($('.js-date'));
 });
